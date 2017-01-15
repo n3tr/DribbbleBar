@@ -11,6 +11,9 @@
 		6A2E35A61DCE3C970039EC5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E35A51DCE3C970039EC5A /* ViewController.swift */; };
 		6A2E35A81DCE3C970039EC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2E35A71DCE3C970039EC5A /* Assets.xcassets */; };
 		6A2E35AB1DCE3C980039EC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2E35A91DCE3C980039EC5A /* Main.storyboard */; };
+		6A2E35B51DCE3FF50039EC5A /* ThumbnailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E35B41DCE3FF50039EC5A /* ThumbnailItemView.swift */; };
+		6A2E35B71DCE466A0039EC5A /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E35B61DCE466A0039EC5A /* Shot.swift */; };
+		A7151B4C6F358E1CAD6DD7A9 /* Pods_DribbbleBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70D62BED94512CAAF544952 /* Pods_DribbbleBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,11 @@
 		6A2E35A71DCE3C970039EC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A2E35AA1DCE3C980039EC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A2E35AC1DCE3C980039EC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2E35B41DCE3FF50039EC5A /* ThumbnailItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailItemView.swift; sourceTree = "<group>"; };
+		6A2E35B61DCE466A0039EC5A /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		A70D62BED94512CAAF544952 /* Pods_DribbbleBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DribbbleBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0BD54901DA281EA5722A84 /* Pods-DribbbleBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbbleBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DribbbleBar/Pods-DribbbleBar.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8AAC9E2D215824DA7F4E04 /* Pods-DribbbleBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbbleBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DribbbleBar/Pods-DribbbleBar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7151B4C6F358E1CAD6DD7A9 /* Pods_DribbbleBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B99C44C382BE0076EE382CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A70D62BED94512CAAF544952 /* Pods_DribbbleBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A2E35971DCE3C970039EC5A = {
 			isa = PBXGroup;
 			children = (
 				6A2E35A21DCE3C970039EC5A /* DribbbleBar */,
 				6A2E35A11DCE3C970039EC5A /* Products */,
+				815417C9F8ACC9C05A19876C /* Pods */,
+				5B99C44C382BE0076EE382CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +76,19 @@
 				6A2E35A71DCE3C970039EC5A /* Assets.xcassets */,
 				6A2E35A91DCE3C980039EC5A /* Main.storyboard */,
 				6A2E35AC1DCE3C980039EC5A /* Info.plist */,
+				6A2E35B41DCE3FF50039EC5A /* ThumbnailItemView.swift */,
+				6A2E35B61DCE466A0039EC5A /* Shot.swift */,
 			);
 			path = DribbbleBar;
+			sourceTree = "<group>";
+		};
+		815417C9F8ACC9C05A19876C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE0BD54901DA281EA5722A84 /* Pods-DribbbleBar.debug.xcconfig */,
+				FA8AAC9E2D215824DA7F4E04 /* Pods-DribbbleBar.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A2E35AF1DCE3C980039EC5A /* Build configuration list for PBXNativeTarget "DribbbleBar" */;
 			buildPhases = (
+				CDE6018BF3471C53BF5BC0D0 /* [CP] Check Pods Manifest.lock */,
 				6A2E359C1DCE3C970039EC5A /* Sources */,
 				6A2E359D1DCE3C970039EC5A /* Frameworks */,
 				6A2E359E1DCE3C970039EC5A /* Resources */,
+				6CE1638C5C7C830FD2ADE3B8 /* [CP] Embed Pods Frameworks */,
+				13281A9C3A5828F8C887F6E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +160,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13281A9C3A5828F8C887F6E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleBar/Pods-DribbbleBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE1638C5C7C830FD2ADE3B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleBar/Pods-DribbbleBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE6018BF3471C53BF5BC0D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A2E359C1DCE3C970039EC5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2E35B51DCE3FF50039EC5A /* ThumbnailItemView.swift in Sources */,
 				6A2E35A61DCE3C970039EC5A /* ViewController.swift in Sources */,
+				6A2E35B71DCE466A0039EC5A /* Shot.swift in Sources */,
 				6A2E35A41DCE3C970039EC5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -234,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -243,6 +326,7 @@
 		};
 		6A2E35B01DCE3C980039EC5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0BD54901DA281EA5722A84 /* Pods-DribbbleBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -256,6 +340,7 @@
 		};
 		6A2E35B11DCE3C980039EC5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8AAC9E2D215824DA7F4E04 /* Pods-DribbbleBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -286,6 +371,7 @@
 				6A2E35B11DCE3C980039EC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
